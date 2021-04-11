@@ -1,0 +1,8 @@
+import os
+
+path=os.chdir('robot8/robot8')
+i = 0
+for file in os.listdir(path):
+    new_file_name ="robot8_{}.jpg".format(i)
+    os.rename(file,new_file_name)
+    i=i+1
